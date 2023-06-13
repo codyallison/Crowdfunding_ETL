@@ -19,6 +19,9 @@ CREATE TABLE "contacts" (
      )
 );
 
+-- Import contacts_regex.csv before proceeding
+
+
 CREATE TABLE "category" (
     "category_id" VARCHAR(10) UNIQUE  NOT NULL,
     "category" VARCHAR(20)   NOT NULL,
@@ -27,6 +30,9 @@ CREATE TABLE "category" (
      )
 );
 
+-- Import category.csv before proceeding
+
+
 CREATE TABLE "subcategory" (
     "subcategory_id" VARCHAR(10) UNIQUE  NOT NULL,
     "subcategory" VARCHAR(50)   NOT NULL,
@@ -34,6 +40,8 @@ CREATE TABLE "subcategory" (
         "subcategory_id"
      )
 );
+
+-- Import subcategory.csv before proceeding
 
 CREATE TABLE "campaign" (
     "cf_id" INTEGER UNIQUE NOT NULL,
@@ -58,4 +66,6 @@ CREATE TABLE "campaign" (
     FOREIGN KEY (category_id) REFERENCES category(category_id),
     FOREIGN KEY (subcategory_id) REFERENCES subcategory(subcategory_id)
 );
+
+-- Import campaign.csv
 
