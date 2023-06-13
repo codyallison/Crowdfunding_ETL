@@ -2,7 +2,7 @@
 project 2 repo - Crowdfunding_ETL
 
 
-ETL_Mini_Project_CAllison_JBeckmeyer.ipynb - This file contains the bulk of our code. We extracted data from the crowdfunding and contacts excel sheets, cleaned the data, and exported contacts, contacts_regex, category and subcategory CSV files. The original and updated files can both be found in the resources folder.
+ETL_Mini_Project_CAllison_JBeckmeyer.ipynb - This file contains the bulk of our code. We extracted data from the crowdfunding and contacts excel sheets, cleaned the data, and exported contacts, contacts_regex, category and subcategory CSV files. The original and updated files can both be found in the resources folder. *Note: please use pandas version 1.5 to ensure that contacts.xlsx extracts correctly.
 
 Resources - Contains the original excel sheets as well as the cleaned CSV files. contacts.csv and contacts_regex both provide the same information, we just used two seperate methods to clean the data.
 
